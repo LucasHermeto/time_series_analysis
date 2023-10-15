@@ -71,13 +71,13 @@ class TimeSeriesModel():
 
     
     def _split_train_test_model(self, min, max):
-        df_model = self.df[self.df['dt_year_month'] >= min].copy()
-        df_model = df_model[df_model['dt_year_month'] < max]
+        df_model = self.df[self.df['YEAR_MONTH'] >= min].copy()
+        df_model = df_model[df_model['YEAR_MONTH'] < max]
 
-        test_year_month = df_model['dt_year_month'].max()
+        test_year_month = df_model['YEAR_MONTH'].max()
 
-        df_model_train = df_model[df_model['dt_year_month'] < test_year_month]
-        df_model_test = df_model[df_model['dt_year_month'] == test_year_month]
+        df_model_train = df_model[df_model['YEAR_MONTH'] < test_year_month]
+        df_model_test = df_model[df_model['YEAR_MONTH'] == test_year_month]
 
         return df_model_train, df_model_test
 

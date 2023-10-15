@@ -81,3 +81,22 @@ $$WMAPE = \frac{\sum_{t=1}^{n}{|A_t - F_t|}}{\sum_{t=1}^{n}{|A_t|}},$$
 where $A_t$ represents the target and $F_t$ represents the predicted value.
 
 Stay tuned as we delve deeper into our demand forecasting journey, exploring how data science and predictive modeling can drive improvements in the e-commerce supply chain.
+
+
+### Future
+- Add feature engineering to src
+- Implement MLFlow
+- Hyperparameter tunning
+- Implemente Cross Validation
+- Group the sales to create new features:
+    - total sales
+    - product line sales
+    - product sales
+    - country sales
+    - territory sales
+    - deal size sales
+- Create Markov Chain model
+- Create stacking ensemble model using:
+    - ARIMA
+    - Prophet
+    - Random Forest
