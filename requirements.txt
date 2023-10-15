@@ -1,2 +1,7 @@
-xgboost
+matplotlib
+pandas
 pyarrow
+scikit-learn
+statsmodels
+tslearn
+xgboost
